@@ -164,6 +164,8 @@ blockswap: "Blockswap RPC does not track any kind of user information at the bui
     "Tatum Technology s.r.o.'s policy respects your privacy regarding any information we may collect from you across our website, https://tatum.io, and other sites we own and operate. For more info, check https://tatum.io/privacy-policy .",
   nodifi:
   "Nodifi AI privacy policy request no privacy intrusion. We do not track IP, wallets, or the websites connected to our nodes. For more info check https://nodifi.ai/privacy-policy",
+  rockx:
+    "We may automatically collect and store certain information about your interaction with our Applications including IP address, browser type, internet service provider, referring/exit pages, operating system, date/time stamps and related data. For more info check https://www.rockx.com/privacy-policy.",
  };
 
 export const extraRpcs = {
@@ -1719,6 +1721,11 @@ export const extraRpcs = {
         tracking: "limited",
         trackingDetails: privacyStatement.blockpi
       },
+      {
+        url: "https://rockx-merlin.w3node.com/public-merlin/api",
+        tracking: "yes",
+        trackingDetails: privacyStatement.rockx
+      }
     ]
   },
   420: {
@@ -4325,6 +4332,11 @@ export const extraRpcs = {
         tracking: "limited",
         trackingDetails: privacyStatement.infura,
       },
+      {
+        url: "https://linea-sepolia.blockpi.network/v1/rpc/public",
+        tracking: "limited",
+        trackingDetails: privacyStatement.blockpi,
+      },
      ],
    },
   534351: {
@@ -4773,6 +4785,12 @@ export const extraRpcs = {
   267: {
     rpcs: [
       "https://rpc.ankr.com/neura_testnet"
+    ]
+  },
+  60808: {
+    rpcs: [
+      "https://rpc.gobob.xyz", 
+      "wss://rpc.gobob.xyz"
     ]
   }
 };
